@@ -1,5 +1,5 @@
 var assert = require('assert');
-const mm = require('../MyMatrix.js');
+const { equal }  = require('../MyMatrix.js');
 
 describe('MyMatrix', function () {
   describe("compare", function () {
@@ -14,7 +14,7 @@ describe('MyMatrix', function () {
       [0,0,0]
     ]
     it('must be equal', function(){
-      assert.ok(mm.equal(m1,m2))
+      assert.ok(equal(m1,m2))
     })
   })
 });
