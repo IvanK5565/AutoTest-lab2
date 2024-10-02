@@ -16,5 +16,13 @@ describe('MyMatrix', function () {
     it('must be equal', function(){
       assert.ok(equal(m1,m2))
     })
+    m3 = [
+      [1,0,0],
+      [0,0,0],
+      [0,0,0]
+    ]
+    it('must not be equal', function(){
+      assert.ok(false == equal(m1,m3))
+    })
   })
 });
